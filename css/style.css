@@ -1,0 +1,67 @@
+:root{
+    --black: #22252c;
+    --coral: #e14658;
+    --mountain: #3f3250;
+    --default: #c0b3a0;
+}
+ body{
+     background: var(--mountain);
+     margin: 0;
+ }
+ main{
+    display: table;
+    margin: 100px auto 0 auto;
+    width: auto;
+ }
+form{
+    margin-top: 30px;
+    margin-left: 33px;
+}
+object{
+    width: 100%;
+    color: var(--default);
+}
+.container{
+    position: relative;
+    margin-bottom: 25px;
+}
+form div .label{
+    position: absolute;
+	font-size:16px;
+    top:0px;
+    left: 0px;
+	color:var(--default);
+    pointer-events: none;
+	transition: all 0.3s ease-in-out;
+}
+form .container .input{
+    border: 0;
+    border-bottom: 2px solid var(--black);
+    background: transparent;
+    width: 100%;
+    padding: 8px 0 5px 0;
+    font-size: 16px;
+    color: var(--default);
+}
+form .btn{
+    color: var(--default);
+    background-color: var(--coral);
+    outline: none;
+    border: 0;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    position: relative;
+    cursor: pointer;
+}
+form .input:focus{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--coral);
+}
+
+form input:focus ~ label,
+form input:valid ~ label{
+    top:-5px;
+	font-size:12px;
+}

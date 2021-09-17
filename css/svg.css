@@ -1,0 +1,28 @@
+@keyframes load {
+    0%{
+        stroke-dasharray:125;
+        stroke-dashoffset:1000;
+    }
+    50%{
+        stroke-dasharray:125;
+        stroke-dashoffset:500;
+    }
+    100%{
+        stroke-dasharray:125;
+        stroke-dashoffset:0;
+    }
+}
+.logo{
+    fill:#c0b3a0;
+    stroke-width:0.192424;
+}
+.download{
+    fill:#c0b3a0;
+    stroke: #c0b3a0;
+    font-weight:300;
+    font-family:Montserrat;
+    -inkscape-font-specification:'Montserrat Light';
+    stroke-dasharray:125;
+	stroke-dashoffset:1000;
+    animation: load 4s linear infinite;
+}
